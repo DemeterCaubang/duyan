@@ -1,0 +1,7 @@
+{
+  "name": "duyan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
