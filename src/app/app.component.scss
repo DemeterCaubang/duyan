@@ -117,3 +117,9 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+
+ion-list-header.ios, ion-list-header.md {
+  font-family: 'Elika Gorica' !important;
+  font-size:1.1em;
+}

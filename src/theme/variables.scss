@@ -74,9 +74,23 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+    /* font change */
+    --ion-font-family: 'NotoSans', 'Elika Gorica';
 }
 
-@media (prefers-color-scheme: dark) {
+/*custom fonts*/
+@font-face {
+  font-family: 'Elika Gorica';
+  src: url('/assets/fonts/Elika Gorica.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('/assets/fonts/NotoSans-Regular.ttf');
+}
+
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
