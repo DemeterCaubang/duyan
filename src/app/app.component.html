@@ -8,10 +8,30 @@
                Student
           </ion-list-header>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label style="color: #000;">{{ p.title }}</ion-label>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/home" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/home.svg">
+              <ion-label style="color:#000;">Home</ion-label>
+            </ion-item>
+            <ion-item routerLink="/webinars" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/Webinars.png">
+              <ion-label style="color:#000;">Webinars</ion-label>
+            </ion-item>
+            <ion-item routerLink="/community" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/community.png">
+              <ion-label style="color:#000;">Community</ion-label>
+            </ion-item>
+            <ion-item routerLink="/health-and-wellness" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/health-and-wellness.png">
+              <ion-label style="color:#000;">Health and Wellness</ion-label>
+            </ion-item>
+            <ion-item routerLink="/consultation" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/consultation.png">
+              <ion-label style="color:#000;">Consultation</ion-label>
+            </ion-item>
+            <ion-item routerLink="/quote" lines="none" detail="false" routerLinkActive="selected">
+              <img src="../assets/custom_icons/Diary.png">
+              <ion-label style="color:#000;">Quote of the Day</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>

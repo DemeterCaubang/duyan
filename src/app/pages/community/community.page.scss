@@ -4,12 +4,14 @@ ion-card {
     display: flex;
     height: 10vh;
     align-items: center;
+    background-color: #2b2a33;
 }
 
 #buttons button{
     display: flex;
-    height: 10vh;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #comm-card {
