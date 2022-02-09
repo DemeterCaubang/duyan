@@ -3,48 +3,73 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Home</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div style="height: auto; background: linear-gradient(#89b2e8, #fff); display: flex; justify-content: center;">
-    <img src="/assets/banner.jpg" no-repeat center fixed cover> <!--reference pic: https://oneupvusa.org/news/xh7w0c0w8fp9rc4m0hfy9fiiilf4cr-->
+  <div id="banner">
+    <div id="spanner">
+      <img src="/assets/custom_icons/Sun.png" class="time" style="float: right;">
+      <h1 id="greeting">Good morning,</h1>
+      <h2>Student!</h2>
+    </div>
+    <img src="/assets/banner.png" no-repeat center fixed cover>
   </div>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Article 1</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Sample text
-      <button routerLink="/health-and-wellness" class="ion-activatable ripple-parent">
-        Read More
-        <ion-ripple-effect></ion-ripple-effect>
-      </button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Article 2</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Sample text
-      <button routerLink="/health-and-wellness" class="ion-activatable ripple-parent">
-        Read More
-        <ion-ripple-effect></ion-ripple-effect>
-      </button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Article 3</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Sample text
-      <button routerLink="/health-and-wellness" class="ion-activatable ripple-parent">
-        Read More
-        <ion-ripple-effect></ion-ripple-effect>
-      </button>
-    </ion-card-content>
-  </ion-card>
+  <div id="community">
+    <h2 id="community-header">Community</h2>
+    <div class="grid-full">
+      <ion-row>
+        <ion-col>
+          <ion-card id="buttons">
+            <button routerLink="/creative-room" class="ion-activatable ripple-parent">
+            <img src="/assets/creative-room-circle.png" id="comm-card">
+            <h5>creative room</h5>
+          </button>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card id="buttons">
+              <button routerLink="/freedom-wall" class="ion-activatable ripple-parent">
+              <img src="/assets/freedom-wall-circle.png" id="comm-card">
+              <h5>freedom wall</h5>
+            </button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div id="networks">
+    <h2 id="networks-header">Networks</h2>
+    <div class="grid-full">
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            
+          </ion-card>
+          <p>Puso para sa Bayan</p>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <iframe src="https://drive.google.com/file/d/1unhvU5aYE-aRjDufBHlU2Ma5s1Mqm3Bq/preview" style="position:absolute; left:0; top:0; width:100%; height:100%" allowfullscreen></iframe>
+          </ion-card>
+          <p>Love Yourself</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <iframe src="https://drive.google.com/file/d/13zs1x4BulOVqJonEvfDiwcLvfcnh20I-/preview" style="position:absolute; left:0; top:0; width:100%; height:100%" allowfullscreen></iframe>
+          </ion-card>
+          <p>Relaxation Techniques</p>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            
+          </ion-card>
+          <p>Call for Volunteers</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
 </ion-content>

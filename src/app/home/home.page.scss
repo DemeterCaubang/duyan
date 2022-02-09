@@ -2,7 +2,58 @@ ion-card-title.ios, ion-card-title.md {
     font-family: 'Elika Gorica' !important;
 }
 
-button {
-    padding: 10px;
+ion-col {
+    align-items: center;
+}
+
+ion-card {
     border-radius: 25px;
+    border: 5px solid #2E3747;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+#buttons button{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+ion-card h5 {
+    padding-left: 5px;
+}
+
+div {
+    padding: 15px;
+}
+
+.time {
+    height: 10vh;
+    width: 10vh;
+}
+
+#banner {
+    height: auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#greeting {
+    font-family: 'Elika Gorica' !important;
+    font-size:2em;
+}
+
+#community-header, #networks-header, p {
+    text-align: center;
+}
+
+#comm-card {
+    height: 5vh;
+    width: 5vh;
+}
+
+h2 {
+    font-size: 1.5em;
 }

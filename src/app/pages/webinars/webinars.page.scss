@@ -2,3 +2,15 @@ iframe {
     border-radius: 5px;
     margin: 0px; 
 }
+
+ion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222837;
+    border: 5px solid #2E3747;
+}
+
+p {
+    text-align: center;
+}

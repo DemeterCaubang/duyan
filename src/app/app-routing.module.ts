@@ -34,6 +34,14 @@ const routes: Routes = [
   {
     path: 'webinars',
     loadChildren: () => import('./pages/webinars/webinars.module').then( m => m.WebinarsPageModule)
+  },
+  {
+    path: 'freedom-wall',
+    loadChildren: () => import('./others/freedom-wall/freedom-wall.module').then( m => m.FreedomWallPageModule)
+  },
+  {
+    path: 'creative-room',
+    loadChildren: () => import('./others/creative-room/creative-room.module').then( m => m.CreativeRoomPageModule)
   }
 ];
 
