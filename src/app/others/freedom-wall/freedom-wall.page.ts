@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-freedom-wall',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FreedomWallPage implements OnInit {
 
-  constructor() { }
+  constructor(private inBrowser: InAppBrowser) { }
+  
+  opentab1(){
+    this.inBrowser.create("https://www.google.com",'_self');
+  }
 
   ngOnInit() {
   }

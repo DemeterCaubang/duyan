@@ -12,7 +12,7 @@
     <div id="spanner">
       <img src="/assets/custom_icons/Sun.png" class="time" style="float: right;">
       <h1 id="greeting">Good morning,</h1>
-      <h2>Student!</h2>
+      <h2>User!</h2>
     </div>
     <img src="/assets/banner.png" no-repeat center fixed cover>
   </div>
@@ -22,7 +22,7 @@
       <ion-row>
         <ion-col>
           <ion-card id="buttons">
-            <button routerLink="/creative-room" class="ion-activatable ripple-parent">
+            <button (click)="opentab1()" class="ion-activatable ripple-parent">
             <img src="/assets/creative-room-circle.png" id="comm-card">
             <h5>creative room</h5>
           </button>
